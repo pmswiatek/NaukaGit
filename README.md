@@ -1,4 +1,5 @@
 ﻿nauka git-a ...
 wymyślone pliki projektu ...
 
-wersja: 0.1.0
+wersja: 0.1.1
+
