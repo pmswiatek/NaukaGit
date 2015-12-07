@@ -54,12 +54,13 @@
         <div class="col-md-4">
           koflikt na poziomie repozytorium zdalnego
           <p>robie kolejno:
+            <li>probuje push-a <strong>git push origin master</strong> -> mam blad z 2 powodów 1) repo lokalne nie jest aktualne 2) musze scalic zmiany a wiec rozwiazac konflikty</li>
             <li>odswiezam lokalne repozytorium <strong>git fetch origin master</strong></li>
-            <li>probuje push-a <strong>git push origin master</strong> -> mam blad bo musze scalic zmiany</li>
             <li>robie <strong>git rebase origin/master</strong> -> mam info gdzie problem CONFLICT (content): Merge conflict in README.md</li>
             <li>poprawiam (scalam) plik README.md</li>
             <li>wrzucam go do stage <strong>git add .</strong></li>
             <li>i koncze rebase <strong>git rebase --continue</strong></li>
+            <li>tym razem push sie uda bo zaktualizowalem repozytorium i rozwiazalem konflikty <strong>git push origin master</strong></li>
           </p>
         </div>
       </div>      
