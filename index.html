@@ -48,8 +48,19 @@
           <li>sprawdzenie zmian miedzy lokalnym i zdlanym repozytorium <strong>git remote show origin</strong></li>
           <li>wyslanie ponownie zmian do zdalnego repo <strong>git push origin master</strong></li>
           <li>klonowanie repozytorium <strong>git clone https://github.com/pmswiatek/NaukaGit.git</strong></li>
+          <li>scalanie zmian na poziomie repozytorium <strong>git rebase origin/master</strong></li>
         </div>
-        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">
+          koflikt na poziomie repozytorium zdalnego
+          <p>robie kolejno:
+            <li>odswiezam lokalne repozytorium <strong>git fetch origin master</strong></li>
+            <li>probuje push-a <strong>git push origin master</strong> -> mam blad bo musze scalic zmiany</li>
+            <li>robie <strong>git rebase origin/master</strong> -> mam info gdzie problem CONFLICT (content): Merge conflict in README.md</li>
+            <li>poprawiam (scalam) plik README.md</li>
+            <li>wrzucam go do stage <strong>git add .</strong></li>
+            <li>i koncze rebase <strong></strong></li>
+          </p>
+        </div>
       </div>      
     </div>
 
